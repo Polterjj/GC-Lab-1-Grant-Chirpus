@@ -2,7 +2,7 @@ body {
 font-family: 'Open Sans', sans-serif;
 
 }
-p {
+.para {
     border-left: 5px solid black;
     padding-left: 10px;
 }
@@ -27,12 +27,4 @@ footer {
  
 .Link1 {
     margin-left: 75%;
-}
-
-.link2 {
-    margin-left: 85%;
-}
-
-.link3 {
-    margin-left: 95%;
 }
