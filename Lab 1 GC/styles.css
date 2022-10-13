@@ -9,11 +9,12 @@ font-family: 'Open Sans', sans-serif;
 
 
 button {
-    width: 100%;
     border-radius: 50px;
     background-color: black;
-    padding: 7px 7px;
+    height: 50px;
+    width: 50px;
     color: white;
+    width: 100px;
 
 }
 
@@ -27,4 +28,64 @@ footer {
  
 .Link1 {
     margin-left: 75%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+}
+
+@media screen and (min-width: 768px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .para {
+        width: 50%;
+        
+    }
+    .headersection {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .p {
+        margin-right: 10px;
+    }
+
+    .bullseye {
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .circle1 {
+        width: 250px;
+        height: 250px;
+        background-color: rgba(247, 136, 167, 0.6);
+        right: 80px;
+
+    }
+
+    .circle2 {
+        width: 150px;
+        height: 150px;
+        background-color: rgba(207, 130, 213, 0.6);
+        right: 0;
+        top: 40px;
+
+
+    }
+
+    .circle3 {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(247, 193, 162, 0.7);
+        right: 0;
+        top: 150px;
+    }
+
 }
