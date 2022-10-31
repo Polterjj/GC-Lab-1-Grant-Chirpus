@@ -11,12 +11,3 @@ else if (actualTemp < desiredTemp){
 else {
     console.log("Standby")
 }
-
-
-let tempCelsius = 32;
-
-let targetUnit = "K";
-
-if (targetUnit = "K"){
-    console.log ('The temperature is' (tempCelsius + 273.15), 'degrees Kelvin')
-} 
