@@ -81,6 +81,12 @@ function editSubmission (array, index, newScore){
 
 editSubmission(submissions, 1, 55);
 
+// 6.
+
+function findSubmissionByName (array, name) {
+    
+}
+
 
 
 
