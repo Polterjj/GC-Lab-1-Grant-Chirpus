@@ -81,49 +81,52 @@ function editSubmission (array, index, newScore){
 
 editSubmission(submissions, 1, 55);
 
-// 6.
-
-function findSubmissionByName (array, name) {
-    
+function editsubmissions(array,index,score) {
+    return array[index].score = score;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function deleteSubmissionByIndex(array, index) {
-    array.splice(index, 1);
-    console.log (submissions)
-
+// 6
+const findSubmissionByName = function(array, name) {
+    return array.find( person => person.name === name )
 }
-deleteSubmissionByIndex(submissions, 2)
 
-function deleteSubmissionByName(array, name){
+// 7
+const findLowestScore = function(array) {
+    let min = array[0].score
+    array.forEach( item =>
+    {
+        if(item.score < min) 
+        {
+            min=item.score
+        }
+    })
+    return  array.find( item => item.score == min ? item : null)    
+}
 
+// 8
+const findAverageScore = function(array) {
+    let sum = 0
+    for (let item of array) {
+        sum += item.score;
+    }
+    return sum/array.length;
+}
 
+// 9
+const filterPassing = function(array) {
+    return array.filter( item => item.passed == true);
+}
+
+// 10
+const filter90andAbove = function(array) {
+    return array.filter( item => item.score >= 90);
+}
+
+export {
+    editsubmissions,
+    findSubmissionByName,
+    findLowestScore,
+    findAverageScore,
+    filterPassing,
+    filter90andAbove,
 }
