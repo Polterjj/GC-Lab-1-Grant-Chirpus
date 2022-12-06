@@ -1,0 +1,14 @@
+{
+  "name": "examplefolder",
+  "version": "1.0.0",
+  "description": "The most awesome JS library in existence",
+  "main": "hello.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
+}
